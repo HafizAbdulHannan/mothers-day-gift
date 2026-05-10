@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Confetti from 'react-confetti';
 
+import pic1 from './1.jfif';
+import pic2 from './2.jpg';
+import pic3 from './3.png';
+
 export default function App() {
   const [step, setStep] = useState(0);
   const [windowSize, setWindowSize] = useState({ width: window.innerWidth, height: window.innerHeight });
@@ -101,15 +105,15 @@ export default function App() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
               
               <div className="aspect-square bg-rose-200/80 backdrop-blur-sm rounded-2xl shadow-lg border border-rose-100 flex items-center justify-center overflow-hidden">
-                <img src="/1.jfif" alt="Memory with Ammi" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                <img src={pic1} alt="Memory with Ammi" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
               </div>
               
               <div className="aspect-square bg-rose-200/80 backdrop-blur-sm rounded-2xl shadow-lg border border-rose-100 flex items-center justify-center overflow-hidden">
-                <img src="/2.jpg" alt="Memory with Ammi" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                <img src={pic2} alt="Memory with Ammi" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
               </div>
               
               <div className="aspect-square bg-rose-200/80 backdrop-blur-sm rounded-2xl shadow-lg border border-rose-100 flex items-center justify-center overflow-hidden">
-                <img src="/3.png" alt="Memory with Ammi" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                <img src={pic3} alt="Memory with Ammi" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
               </div>
 
             </div>
